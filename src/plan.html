@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Plan</title>
+    <link rel="stylesheet" href="css/app.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="plan__container">
+      <div class="plan">
+        <input id="switch" type="checkbox">
+        <div class="header">
+          <h6>Choose your plan</h6>
+          <label for="switch" class="select__period">
+              <span>Monthly</span>
+              <span>Yearly</span>
+          </label>
+        </div>
+        <div class="plan__cards">
+          <div class="plan__card plan__card-1">
+            <div class="plan__card__header">
+              <h6>Starter</h6>
+            </div>
+            <div class="plan__card__payment">
+              <div class="plan__card__payment__amount">
+                <span data-monthly-price="$12.89" data-yearly-price="$9.12">
+                  / month
+                </span>
+              </div>
+              <div class="plan__card__payment__period">
+                  <span>
+                    Billed yearly
+                  </span>
+                </div>
+            </div>
+            <div class="description">
+              <p>Pretium fusce id velit ut tortor pretium. Sit amet consectetur adipiscing elit ut. Condimentum mattis pellentesque id nibh. Euismod elementum.</p>
+            </div>
+            <div class="plan__card__footer">
+              <a href="#start" class="btn__active">Get started</a>
+            </div>
+          </div>
+          <div class="plan__card">
+            <div class="plan__card__header">
+              <h6>Starter</h6>
+            </div>
+            <div class="plan__card__payment">
+              <div class="plan__card__payment__amount">
+                <span>
+                  $8.99 / month
+                </span>
+              </div>
+              <div class="plan__card__payment__period">
+                  <span>
+                    Billed yearly
+                  </span>
+                </div>
+            </div>
+            <div class="description">
+              <p>Pretium fusce id velit ut tortor pretium. Sit amet consectetur adipiscing elit ut. Condimentum mattis pellentesque id nibh. Euismod elementum.</p>
+            </div>
+            <div class="plan__card__footer">
+              <a href="#start" class="btn__active">Get started</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

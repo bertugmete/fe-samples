@@ -1,0 +1,124 @@
+.help__center {
+  background-color: #f2f2f2 !important;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  .title {
+    margin-bottom: 35px;
+    h3 {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 33px;
+      color: #202842;
+    }
+  }
+  .search {
+    margin-bottom: 30px;
+    form {
+      label {
+        display: inline-flex;
+        background-color: #fff;
+        color: #828d97;
+        box-shadow: 0px 9px 10px -4px rgba(201, 214, 239, 0.45654);
+        border-radius: 10px;
+        padding: 15px;
+        width: 550px;
+
+        input {
+          padding-left: 15px;
+          width: 90%;
+          font-size: 16px;
+          line-height: 22px;
+          color: #828d97;
+        }
+      }
+    }
+  }
+
+  .dropdown__container {
+    ul {
+      li {
+        border-bottom: 2px solid #dee4f1;
+        margin-top: 25px;
+        input {
+          display: none;
+          &:checked + label {
+            img {
+              transform: rotate(180deg);
+            }
+
+            & + .dropdown__content {
+              max-height: 50vh;
+              overflow: visible;
+              padding-bottom: 20px;
+            }
+          }
+        }
+        label {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          justify-content: space-between;
+          cursor: pointer;
+          span {
+            font-size: 18px;
+            line-height: 25px;
+            color: #202842;
+            margin-bottom: 15px;
+            padding-right: 15px;
+          }
+        }
+
+        .dropdown__content {
+          max-height: 0;
+          overflow: hidden;
+          color: rgba(#202842, 0.6);
+          transition: all 0.3s;
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .articles {
+    margin-top: 45px;
+    ul {
+      display: flex;
+      li {
+        margin-right: 35px;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          background: #ffffff;
+          box-shadow: 0px 9px 10px -4px rgba(201, 214, 239, 0.45654);
+          border-radius: 10px;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          transition: transform 0.3s;
+
+          img {
+            object-fit: cover;
+          }
+          span {
+            padding: 15px;
+            font-size: 14px;
+            line-height: 19px;
+            color: #202842;
+          }
+
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+  }
+}

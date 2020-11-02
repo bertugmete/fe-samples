@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Recipe</title>
+    <link rel="stylesheet" href="css/app.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  </head>
+  <body>
+  </body>
+  <div class="recipe">
+    <div class="recipe__general">
+      <ul>
+        <li>
+          <img src="./img/clock.svg" alt="clock">
+          <span>30 min</span>
+        </li>
+        <li>
+          <img src="./img/pie.svg" alt="pie">
+          <span>6 servings</span>
+        </li>
+        <li>
+          <img src="./img/cal.svg" alt="cal">
+          <span>210 cals</span>
+        </li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="difficulty">
+      <div class="header">
+        <h3>Difficulty</h3>
+      </div>
+      <ul>
+        <li>
+          <span>Easy</span>
+        </li>
+        <li class="active">
+          <span>Medium</span>
+        </li>
+        <li>
+          <span>Hard</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="search__recipe">
+      <div class="header">
+        <h3>Search for recipes</h3>
+      </div>
+      <div class="search">
+        <label for="search">
+          <img src="./img/recipe-search.svg" alt="recipe-search">
+          <input id="search" type="text" placeholder="Your email address">
+        </label>
+      </div>
+    </div>
+
+    <div class="today__recipe">
+      <div class="today__recipe__image">
+        <img src="./img/recipe.png" alt="recipe">
+      </div>
+      <div class="today__recipe__inner">
+        <div class="header">
+          <div class="top__title">
+            <h6>Subscribe today</h6>
+          </div>
+          <div class="bottom__title">
+            <h3>Never miss a recipe</h3>
+          </div>
+        </div>
+        <div class="body">
+          <input type="text" placeholder="Your email address">
+          <button type="submit">Subscribe</button>
+        </div>
+        <div class="footer">
+          <p>We won’t send you spam. <br> Unsubscribe at any time.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="meal">
+      <div class="meal__inner">
+        <div class="like">
+          <img src="./img/heart.svg" alt="heart">
+        </div>
+        <div class="photo">
+          <a href="meal">
+            <img src="./img/meal.png" alt="meal">
+          </a>
+        </div>
+        <div class="information">
+          <div class="header">
+            <a href="#">Spinach Salad</a>
+          </div>
+          <div class="description">
+            <p>Simple recipe for a weeknight or a celebration table. I promise it is one of the easiest salads you will ever make!</p>
+          </div>
+          <div class="rating">
+            <div class="stars">
+              <img src="./img/star.svg" alt="star">
+              <img src="./img/star.svg" alt="star">
+              <img src="./img/star.svg" alt="star">
+              <img src="./img/star.svg" alt="star">
+            </div>
+            <div class="order__count">
+              <span>14K</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="meal__selection">
+      <div class="previous direction">
+        <img src="./img/recipe-left-arrow.svg" alt="recipe-left-arrow">
+      </div>
+      <div class="next direction">
+        <img src="./img/recipe-right-arrow.svg" alt="recipe-right-arrow">
+      </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/meal1.png" alt="meal1">
+                <span>Crispy Crouton Salad</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/meal1.png" alt="meal1">
+                <span>Crispy Crouton Salad</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/meal1.png" alt="meal1">
+                <span>Crispy Crouton Salad</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/meal1.png" alt="meal1">
+                <span>Crispy Crouton Salad</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/meal1.png" alt="meal1">
+                <span>Crispy Crouton Salad</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/meal1.png" alt="meal1">
+                <span>Crispy Crouton Salad</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/meal1.png" alt="meal1">
+                <span>Crispy Crouton Salad</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/meal1.png" alt="meal1">
+                <span>Crispy Crouton Salad</span>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
+    <script>
+      var swiper = new Swiper('.meal__selection .swiper-container', {
+        slidesPerView: 4,
+        spaceBetween: 5,
+        navigation: {
+          nextEl: '.next',
+          prevEl: '.previous',
+        },
+      });
+    </script>
+  </body>
+</html>

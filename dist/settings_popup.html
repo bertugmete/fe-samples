@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Settings Popup</title>
+    <link rel="stylesheet" href="css/app.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
+  <body>
+  </body>
+    <div class="settings__action">
+      <button onclick="openPopup()" class="popup-open-btn">Open</button>
+    </div>
+    <div id="popup" class="popup">
+      <div class="settings__popup">
+        <div class="close__button">
+          <button onclick="closePopup()">
+            <img src="./img/close.svg" alt="close">
+            <span>Close</span>  
+          </button>
+        </div>
+        <div class="popup__header">
+          <span>Settings</span>
+        </div>
+        <div class="language">
+          <div class="part__header">
+            <span>Language</span>
+          </div>
+          <div class="part__description">
+            <span>Let us know which language you’re most comfortable using. You can change it back at any time.</span>
+          </div>
+          <div class="language__selection">
+            <select>
+              <option>English</option>
+              <option>Turkish</option>
+              <option>German</option>
+            </select>
+           <img src="./img/arrow-down.svg" alt="arrow-down">
+          </div>
+      </div>
+          <div class="divider"></div>
+          <div class="selections">
+            <div class="autoplay__selection">
+              <div class="autoplay__selection__info">
+                <div class="part__header">
+                  <span>Autoplay videos</span>
+                </div>
+                <div class="part__description">
+                  <span>Choose if you want to autoplay on your browser</span>
+                </div>
+              </div>
+              <label class="swift__button autoplay">
+                <input type="checkbox">
+                <span class="checkbox"></span>
+              </label>
+            </div>
+            <div class="photo__selection">
+              <div class="photo__selection__info">
+                <div class="part__header">
+                  <span>Show profile photos</span>
+                </div>
+                <div class="part__description">
+                  <span>Choose whether to show or hide profile photos of other members.</span>
+                </div>
+              </div>
+              <label class="swift__button photo">
+                <input type="checkbox">
+                <span class="checkbox"></span>
+              </label>
+            </div>
+          </div>
+              <div class="actions">
+                <div class="btn btn__save">
+                  <a href="#save">Save</a>
+                </div>
+                <div class="btn btn__cancel">
+                  <a href="#cancel">Cancel</a>
+                </div>
+              </div>
+        </div>
+    </div>
+    
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

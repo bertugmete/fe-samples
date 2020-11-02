@@ -1,0 +1,110 @@
+.alert {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22.59px;
+  background-color: #0c1226;
+  color: #e9e9ec;
+  padding: 18px 43px;
+  box-shadow: 0 15px 42px -12px #a8b2c3;
+  border-radius: 29px;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 76px;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 300ms all;
+
+  &.active {
+    top: 10px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &.error {
+    top: 10px;
+    opacity: 1;
+    visibility: visible;
+    background-color: red;
+  }
+}
+
+.color__palette__header {
+  margin-bottom: 20px;
+  h3 {
+    font-size: 34px;
+    text-align: center;
+    line-height: 42.76px;
+    font-weight: 700;
+    color: #0c1226;
+  }
+}
+
+.color_palette {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  ul {
+    display: flex;
+    li {
+      margin: 0px 15px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      width: 207px;
+      box-shadow: 0 4px 4px 0 rgba($color: #000000, $alpha: 0.25);
+      border-radius: 5px;
+      transition: all 0.3s;
+      cursor: pointer;
+      & .background {
+        display: inline-block;
+        width: 100%;
+        height: 251px;
+        background-color: #eeedf0;
+        border-radius: 5px;
+      }
+
+      & .color {
+        display: inline-block;
+        font-size: 22px;
+        text-align: center;
+        margin: 10px;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  button {
+    padding: 23px 100px;
+    text-align: center;
+    background-color: #7e6cca;
+    color: #fff;
+    margin-top: 55px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  p {
+    color: #0c1226;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .short__cut {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 9px 20px;
+    background-color: #fff;
+    margin-top: 24px;
+    border-radius: 23.5px;
+  }
+}

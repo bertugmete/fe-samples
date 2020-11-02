@@ -1,0 +1,129 @@
+.trial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2ff;
+  height: 100vh;
+
+  .trial__card {
+    padding: 45px 55px;
+    background-color: #fff;
+    max-width: 560px;
+    border-radius: 5px;
+    .title {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 28px;
+      color: #10182f;
+      margin-bottom: 25px;
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+
+      .circle__bar {
+        height: 72px;
+        width: 72px;
+        transform: rotate(-90deg);
+        svg {
+          --circum: calc(2 * 3.14 * 33.5);
+          --offset: calc(var(--circum) - (var(--circum) * 83 / 100));
+          circle {
+            fill: none;
+            stroke-width: 5;
+            stroke: #dae1f5;
+            stroke-dasharray: var(--circum);
+            stroke-dashoffset: var(--circum);
+            stroke-linecap: round;
+
+            &:nth-child(1) {
+              stroke-dashoffset: 0;
+            }
+
+            &:nth-child(2) {
+              stroke: #345ace;
+              animation: 1s animateOffset;
+              animation-fill-mode: forwards;
+            }
+          }
+        }
+      }
+
+      .payment {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        .amount {
+          span {
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 33px;
+            margin-bottom: 5px;
+          }
+        }
+        .text {
+          span {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+    .description {
+      margin-top: 30px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      margin-bottom: 40px;
+    }
+
+    .trial__actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .btn__upgrade {
+        a {
+          background: #10182f;
+          border: 1px solid #10182f;
+          cursor: pointer;
+          padding: 12px 45px;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 20px;
+          border-radius: 27.5px;
+          transition: all 0.3s;
+          color: #ffffff;
+
+          &:hover {
+            color: #10182f;
+            background: #fff;
+          }
+        }
+      }
+      .learn__more {
+        a {
+          cursor: pointer;
+          font-weight: bold;
+          padding: 12px 45px;
+          font-size: 16px;
+          color: #10182f;
+          border: 2px solid #dae1f5;
+          border-radius: 27.5px;
+
+          &:hover {
+            color: #10182f;
+            background: #dae1f5;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes animateOffset {
+  to {
+    stroke-dashoffset: var(--offset);
+  }
+}

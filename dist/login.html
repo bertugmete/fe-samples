@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/app.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
+  <body>
+    <div class="login">
+      <div class="login__container">
+        <div class="login__header">
+          <div class="header__text">
+            <h3>Welcome Back !</h3>
+            <h6>Sign in to continue</h6>
+          </div>
+          <img src="./img/login.png" alt="login">
+          <div class="avatar">
+            <img src="./img/suggest_user.png" alt="suggest_user">
+          </div>
+        </div>
+        <div class="body">
+          <form action="POST">
+            <div class="form__group">
+              <label for="username">Username</label>
+              <input id="username" type="text">
+            </div>
+            <div class="form__group">
+              <label for="password">Password</label>
+              <input id="password" type="password">
+            </div>
+            <div class="form__group remember">
+              <label for="remember">
+                <input id="remember" type="checkbox">
+                <span class="checkbox"><img src="./img/checked.svg" alt="checked"></span>
+                <span>Remember me</span>
+                </label>
+            </div>
+          </form>
+        </div>
+        <div class="footer">
+          <button type="button">Log In</button>
+          <div class="forgot">
+            <img src="./img/lock.svg" alt="lock">
+            <a href="#forgot">Forgot your password ?</a>
+          </div>
+        </div>
+      </div>
+      <div class="signup">
+        <p>Don’t have an account ? <a href="signup">Signup now</a> </p>
+        <p>© 2020 Crafted and designed by 10ursabanoglu. 🎉</p>
+      </div>
+  </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

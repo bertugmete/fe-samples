@@ -1,0 +1,106 @@
+body {
+  height: 100vh;
+}
+
+.safari {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  --topbar__bg__color: #fff;
+  --topbar__icon__color: #737373;
+  --url__color: #4c4c4c;
+  --url__bg__color: rgba(0, 0, 0, 0.05);
+  --iframe__color: #fff;
+
+  .top__bar {
+    box-shadow: 0px 0.5px 0px rgba(0, 0, 0, 0.15),
+      inset 0px -0.5px 0px rgba(0, 0, 0, 0.05);
+    padding: 12px;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    background: var(--topbar__bg__color);
+    color: var(--topbar__icon__color);
+
+    .bar__actions {
+      display: flex;
+      align-items: center;
+      .circles {
+        .circle {
+          box-sizing: border-box;
+          box-shadow: inset 0px 0px 6px #ec6d62;
+          border: 0.5px solid #ce5347;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          display: inline-block;
+          margin-right: 8px;
+
+          &.red {
+            background: #ee6a5f;
+            border-color: #ce5347;
+          }
+          &.yellow {
+            background: #f5bd4f;
+            border-color: #d6a243;
+          }
+          &.green {
+            background: #61c454;
+            border-color: #58a942;
+          }
+        }
+      }
+      img {
+        margin-left: 25px;
+        cursor: pointer;
+      }
+    }
+
+    .url__actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .url {
+        position: relative;
+        background: var(--url__bg__color);
+        border-radius: 6px;
+        width: 516px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 18px;
+        padding: 6px 0;
+        span {
+          font-size: 13px;
+          line-height: 16px;
+          color: var(--url__color);
+          img {
+            position: absolute;
+            right: 5px;
+          }
+        }
+        img {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .iframe {
+    flex: 1;
+    background: var(--iframe__color);
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &.dark {
+    --topbar__bg__color: #191c1f;
+    --topbar__icon__color: #999c9f;
+    --url__color: #fff;
+    --iframe__color: #38393a;
+    --url__bg__color: #0c0f12;
+  }
+}

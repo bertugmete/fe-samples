@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pop up</title>
+    <link rel="stylesheet" href="css/app.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="btn__modal">
+      <label for="popup">
+        <span>Aç</span>
+      </label>
+    </div>
+    <input class="popup__action" type="checkbox" id="popup">
+    <div class="popup__inner">
+    <div class="popup">
+      <div class="popup__close__btn">
+        <label for="popup">
+          <span>X</span>
+        </label>
+      </div>
+      <div class="popup__header">
+        <h6>Share this design</h6>
+      </div>
+      <div class="popup__social__medias">
+        <div class="popup__social__media" onclick="socialMediaClick('https://twitter.com')">
+          <img src="./img/twitter-logo.svg" alt="twitter-logo">
+        </div>
+        <div class="popup__social__media" onclick="socialMediaClick('https://facebook.com')">
+          <img src="./img/facebook-logo.svg" alt="facebook-logo">
+        </div>
+        <div class="popup__social__media" onclick="socialMediaClick('https://github.com')">
+          <img src="./img/github-logo.svg" alt=github-logo">
+        </div>
+        <div class="popup__social__media" onclick="socialMediaClick('https://dribbble.com')">
+          <img src="./img/dribbble-logo.svg" alt="dribbble-logo">
+        </div>
+      </div>
+      <div class="popup__copy">
+        <div class="popup__copy__header">
+          <h6>Or copy link</h6>
+        </div>
+        <div class="popup__copy__area">
+          <input id="copy" type="text">
+          <button onclick="copySocialMediaLink()"">Copy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

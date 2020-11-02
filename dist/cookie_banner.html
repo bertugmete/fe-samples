@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cookie Banner</title>
+    <link rel="stylesheet" href="css/app.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="banner">
+      <div class="selection">
+          <div class="color__selection">
+            <select name="color" onchange="colorChange(this)">
+              <option value="dark">Dark</option>
+              <option value="light">Light</option>
+            </select>
+          </div>
+          <div class="positon__selection">
+            <select name="positon" onchange="positionChange(this)">
+              <option value="tl">Top Left</option>
+              <option value="tc">Top Center</option>
+              <option value="tr">Top Right</option>
+              <option value="cl">Center Left</option>
+              <option value="c" selected>Center</option>
+              <option value="cr">Center Right</option>
+              <option value="bl">Bottom Left</option>
+              <option value="bc">Bottom Center</option>
+              <option value="br">Bottom Right</option>
+            </select>
+          </div>
+      </div>
+      <div class="cookie__container active horizontal position position-c dark">
+        <div class="cookie__icon">
+          <img src="./img/cookies.svg" alt="cookies">
+        </div>
+        <div class="cookie__information">
+          <p>We use third-party cookies to personalize content, ads, and analyze site traffic. 
+            </p>
+            <a href="#">Learn more</a>
+        </div>
+        <div class="cookie__btn__okey">
+          <a href="#okay">Okay</a>
+        </div>
+      </div>
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

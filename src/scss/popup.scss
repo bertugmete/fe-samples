@@ -1,0 +1,132 @@
+.btn__modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  label {
+    span {
+      background-color: #ddd;
+      display: inline-block;
+      padding: 15px 25px;
+      cursor: pointer;
+      border-radius: 15px;
+    }
+  }
+}
+
+.popup__action {
+  visibility: hidden;
+  &:checked {
+    & + .popup__inner {
+      visibility: visible;
+    }
+  }
+}
+
+.popup__inner {
+  visibility: hidden;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(#000, 0.5);
+
+  .popup {
+    width: 600px;
+    height: 357px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 45px;
+    background-color: #ffffff;
+    box-shadow: 0px 9px 45px rgba(24, 48, 81, 0.208531);
+    border-radius: 15px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    &__close__btn {
+      margin-left: auto;
+      label {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        span {
+          cursor: pointer;
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+    }
+
+    &__header {
+      font-weight: bold;
+      font-size: 22px;
+      color: #242e4c;
+      margin-bottom: 40px;
+    }
+
+    &__social__medias {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+
+      .popup__social__media {
+        background: #ffffff;
+        border: 1.34483px solid #f775c1;
+        border-radius: 41px;
+        height: 82px;
+        width: 82px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 35px;
+        cursor: pointer;
+        transition: 300ms transform;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    &__copy {
+      display: flex;
+      flex-direction: column;
+      &__header {
+        h6 {
+          margin-bottom: 10px;
+          font-weight: bold;
+          font-size: 16px;
+        }
+      }
+      &__area {
+        display: flex;
+        position: relative;
+        input {
+          width: 100%;
+          background-color: transparent;
+          padding: 18px 15px;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20.08px;
+          color: #242e4c;
+          border-radius: 5px;
+          border: 1px solid #ebebf2;
+        }
+
+        button {
+          height: 100%;
+          position: absolute;
+          right: 0;
+          color: #f775c1;
+          background-color: transparent;
+          padding: 0px 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
