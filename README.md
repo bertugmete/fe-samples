@@ -1,2 +1,2 @@
 # fe-samples
-Components using html css js
+Components using html sass js
