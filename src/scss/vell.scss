@@ -62,14 +62,14 @@ body {
       box-shadow: 0 20px 60px -45px #f55951;
       border-radius: 25px;
       margin: 15px 0;
-      width: 600px;
+      width: 800px;
 
       &__product {
         display: flex;
         &__image {
           img {
-            height: 100px;
-            width: 100px;
+            height: 160px;
+            width: 160px;
             border-radius: 10px;
           }
         }
@@ -78,15 +78,15 @@ body {
           flex-direction: column;
           margin-left: 20px;
           &__name {
-            font-size: 22px;
+            font-size: 40px;
             margin-bottom: 10px;
           }
           &__description {
-            font-size: 10px;
+            font-size: 16px;
             margin-bottom: 10px;
           }
           &__price {
-            font-size: 16px;
+            font-size: 24px;
           }
         }
       }
