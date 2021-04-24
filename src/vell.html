@@ -11,14 +11,17 @@
   </head>
   <body>
     <div class="tab">
-      <button class="tab__links" onclick="openCity(event, 'hot-drinks')">Sıcak İçecekler</button>
+      <button class="tab__links tab__links--active" onclick="openCity(event, 'hot-drinks')">
+        Sıcak İçecekler
+      </button>
       <button class="tab__links" onclick="openCity(event, 'cold-drinks')">Soğuk İçecekler</button>
       <button class="tab__links" onclick="openCity(event, 'breakfast')">Kahvaltı</button>
       <button class="tab__links" onclick="openCity(event, 'dessert')">Tatlılar</button>
       <button class="tab__links" onclick="openCity(event, 'snack')">Atıştırmalıklar</button>
+      <button class="tab__links" onclick="openCity(event, 'salad')">Salatalar</button>
     </div>
 
-    <div id="hot-drinks" class="tabcontent">
+    <div id="hot-drinks" class="tabcontent" style="display: flex">
       <h3 class="tabcontent__title">Sıcak İçecekler</h3>
       <ul class="tabcontent__list">
         <li class="tabcontent__list__item">
@@ -182,8 +185,8 @@
         </li>
       </ul>
     </div>
-    <div id="dessert" class="tabcontent">
-      <h3 class="tabcontent__title">Tatlılar</h3>
+    <div id="salad" class="tabcontent">
+      <h3 class="tabcontent__title">Salatalar</h3>
       <ul class="tabcontent__list">
         <li class="tabcontent__list__item">
           <div class="tabcontent__list__item__product">
@@ -191,7 +194,7 @@
               <img src="./img/meal.png" />
             </div>
             <div class="tabcontent__list__item__product__information">
-              <div class="tabcontent__list__item__product__information__name">Cheesecake</div>
+              <div class="tabcontent__list__item__product__information__name">Akdeniz Salata</div>
               <div class="tabcontent__list__item__product__information__description">
                 Lorem, deren, trataro, filede, nerada
               </div>
@@ -205,11 +208,11 @@
               <img src="./img/meal.png" />
             </div>
             <div class="tabcontent__list__item__product__information">
-              <div class="tabcontent__list__item__product__information__name">Tartolet</div>
+              <div class="tabcontent__list__item__product__information__name">Sezar Salata</div>
               <div class="tabcontent__list__item__product__information__description">
                 Lorem, deren, trataro, filede, nerada
               </div>
-              <div class="tabcontent__list__item__product__information__price">17₺</div>
+              <div class="tabcontent__list__item__product__information__price">13₺</div>
             </div>
           </div>
         </li>
@@ -219,11 +222,11 @@
               <img src="./img/meal.png" />
             </div>
             <div class="tabcontent__list__item__product__information">
-              <div class="tabcontent__list__item__product__information__name">Pasta Dilimi</div>
+              <div class="tabcontent__list__item__product__information__name">Çoban Salata</div>
               <div class="tabcontent__list__item__product__information__description">
                 Lorem, deren, trataro, filede, nerada
               </div>
-              <div class="tabcontent__list__item__product__information__price">15₺</div>
+              <div class="tabcontent__list__item__product__information__price">10₺</div>
             </div>
           </div>
         </li>
@@ -276,9 +279,56 @@
         </li>
       </ul>
     </div>
+    <div id="dessert" class="tabcontent">
+      <h3 class="tabcontent__title">Tatlılar</h3>
+      <ul class="tabcontent__list">
+        <li class="tabcontent__list__item">
+          <div class="tabcontent__list__item__product">
+            <div class="tabcontent__list__item__product__image">
+              <img src="./img/meal.png" />
+            </div>
+            <div class="tabcontent__list__item__product__information">
+              <div class="tabcontent__list__item__product__information__name">Cheesecake</div>
+              <div class="tabcontent__list__item__product__information__description">
+                Lorem, deren, trataro, filede, nerada
+              </div>
+              <div class="tabcontent__list__item__product__information__price">18₺</div>
+            </div>
+          </div>
+        </li>
+        <li class="tabcontent__list__item">
+          <div class="tabcontent__list__item__product">
+            <div class="tabcontent__list__item__product__image">
+              <img src="./img/meal.png" />
+            </div>
+            <div class="tabcontent__list__item__product__information">
+              <div class="tabcontent__list__item__product__information__name">Tartolet</div>
+              <div class="tabcontent__list__item__product__information__description">
+                Lorem, deren, trataro, filede, nerada
+              </div>
+              <div class="tabcontent__list__item__product__information__price">17₺</div>
+            </div>
+          </div>
+        </li>
+        <li class="tabcontent__list__item">
+          <div class="tabcontent__list__item__product">
+            <div class="tabcontent__list__item__product__image">
+              <img src="./img/meal.png" />
+            </div>
+            <div class="tabcontent__list__item__product__information">
+              <div class="tabcontent__list__item__product__information__name">Pasta Dilimi</div>
+              <div class="tabcontent__list__item__product__information__description">
+                Lorem, deren, trataro, filede, nerada
+              </div>
+              <div class="tabcontent__list__item__product__information__price">15₺</div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
     <script>
       function openCity(evt, cityName) {
-        var i, tabcontent, tablinks
+        let i, tabcontent, tablinks
         tabcontent = document.getElementsByClassName("tabcontent")
         for (i = 0; i < tabcontent.length; i++) {
           tabcontent[i].style.display = "none"
