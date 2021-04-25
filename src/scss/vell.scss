@@ -16,8 +16,6 @@ body {
 /* Style the buttons inside the tab */
 .tab {
   display: flex;
-  padding: 20px 0;
-  border-bottom: 1px solid rgba(126, 131, 137, 0.2);
   margin: 0 auto;
   overflow: auto;
   white-space: nowrap;
@@ -27,17 +25,18 @@ body {
     outline: none;
     cursor: pointer;
     transition: 0.3s;
-    font-size: 40px;
+    font-size: 44px;
     background-color: transparent;
     color: #c4c4c4;
     font-weight: bold;
-    padding: 0 25px;
-    margin: 10px auto;
+    padding: 25px 40px;
+    margin: 0 auto;
   }
 
   &__links {
     &--active {
-      color: #424242 !important;
+      color: #ec1559 !important;
+      border-bottom: 5px solid #ec1559 !important;
     }
   }
 }
@@ -51,10 +50,12 @@ body {
 
   &__title {
     margin: 20px 0;
-    font-size: 24px;
+    font-size: 28px;
   }
 
   &__list {
+    display: flex;
+    flex-direction: column;
     &__item {
       display: flex;
       padding: 20px;
@@ -62,14 +63,14 @@ body {
       box-shadow: 0 20px 60px -45px #f55951;
       border-radius: 25px;
       margin: 15px 0;
-      width: 800px;
+      max-width: 800px;
 
       &__product {
         display: flex;
         &__image {
           img {
-            height: 160px;
-            width: 160px;
+            height: 200px;
+            width: 200px;
             border-radius: 10px;
           }
         }
@@ -78,15 +79,18 @@ body {
           flex-direction: column;
           margin-left: 20px;
           &__name {
-            font-size: 40px;
+            display: flex;
+            font-size: 44px;
             margin-bottom: 10px;
           }
           &__description {
-            font-size: 16px;
+            display: flex;
+            font-size: 20px;
             margin-bottom: 10px;
           }
           &__price {
-            font-size: 24px;
+            display: flex;
+            font-size: 28px;
           }
         }
       }

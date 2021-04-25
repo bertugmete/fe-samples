@@ -377,7 +377,7 @@
       </ul>
     </div>
     <script>
-      function openCity(evt, cityName) {
+      function openCity(evt, menuName) {
         let i, tabcontent, tablinks
         tabcontent = document.getElementsByClassName("tabcontent")
         for (i = 0; i < tabcontent.length; i++) {
@@ -387,7 +387,7 @@
         for (i = 0; i < tablinks.length; i++) {
           tablinks[i].className = tablinks[i].className.replace(" tab__links--active", "")
         }
-        document.getElementById(cityName).style.display = "flex"
+        document.getElementById(menuName).style.display = "flex"
         evt.currentTarget.className += " tab__links--active"
       }
     </script>
